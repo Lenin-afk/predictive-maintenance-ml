@@ -1,0 +1,21 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Secrets and local config
+.env
+
+# Notebooks and editor leftovers
+.ipynb_checkpoints/
+.vscode/
+
+# Local databases
+*.db
+*.sqlite3
