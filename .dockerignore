@@ -1,0 +1,10 @@
+
+.venv/
+.git/
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints/
+.vscode/
+.env
+*.pyc
+predictions.db
