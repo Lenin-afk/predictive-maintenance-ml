@@ -1,4 +1,3 @@
-
 from pathlib import Path
 
 import joblib
@@ -10,8 +9,17 @@ from sqlalchemy.orm import Session
 from predictive_maintenance_ml.database import Base, SessionLocal, engine
 from predictive_maintenance_ml.models import PredictionRecord
 
+from fastapi.middleware.cors import CORSMiddleware
+
 Base.metadata.create_all(bind=engine)
 app = FastAPI(title="Predictive Maintenance API")
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:5173"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 MODEL_PATH = (
     Path(__file__).resolve().parents[2]
