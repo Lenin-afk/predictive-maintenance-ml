@@ -19,6 +19,14 @@ An end-to-end machine learning application that estimates the probability of mac
 - Supports containerization with Docker.
 - Deploys the frontend and backend separately on Render.
 
+## Dashboard Preview
+
+### Main Dashboard
+![PredictIQ Dashboard](screenshots/dashboard.png)
+
+### Prediction History
+![Prediction History](screenshots/history.png)
+
 ## Tech Stack
 
 | Category | Technologies |
